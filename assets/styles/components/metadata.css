@@ -2,7 +2,7 @@
 ############################################################################ */
 .metadata {
   dt, dd {
-    padding-top: var(--size-xs);
+    padding-top: var(--size-xl);
     border-top: solid var(--border-width) var(--color-green);
   }
 }

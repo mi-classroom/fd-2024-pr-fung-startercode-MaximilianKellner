@@ -1,2 +1,38 @@
 /* Work Result
 ############################################################################ */
+.work-result {
+    hr {
+      margin: 0;
+      margin-top: var(--size-l);
+      margin-bottom: var(--size-l);
+    }
+
+    .metadata {
+        dt, dd {
+          padding-top: var(--size-xs);
+          border-top: solid var(--border-width) var(--color-green);
+        
+          a{
+            color: var(--color-pink);
+          }
+        }
+      }
+
+      #image-carousel {
+        display: flex;
+        overflow-x: scroll;
+        list-style: none;
+        padding: 0;
+      }
+      
+      #image-carousel li {
+        margin-right: 10px;
+      }
+      
+      #image-carousel img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+  }
