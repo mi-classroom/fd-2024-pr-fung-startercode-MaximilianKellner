@@ -10,7 +10,7 @@
 
   .title {
     margin-bottom: var(--size-m);
-    color: var(--decoration-color);
+    color: var(--color-green);
     font-size: var(--size-l);
     font-weight: var(--fw-medium);
   }
@@ -19,6 +19,8 @@
   .subtitle a {
     color: var(--color-dark);
     font-size: var(--size-m);
+    /*underline color --color-green*/
+    text-decoration-color: black;
   }
 
   @media only screen and (width >= 40rem) {

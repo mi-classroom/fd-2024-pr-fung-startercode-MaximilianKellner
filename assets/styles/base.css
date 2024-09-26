@@ -156,7 +156,7 @@ strong {
 }
 
 a {
-  color: var(--interaction-color);
+  color: var(--color-pink);
   text-decoration: none;
 }
 
