@@ -18,21 +18,17 @@
         }
       }
 
-      #image-carousel {
+      .bildstrece {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minmax value as needed */
+        margin-bottom: var(--size-xl);
+      }
+      
+      .image-item img {
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: 100%;
         display: flex;
-        overflow-x: scroll;
-        list-style: none;
-        padding: 0;
+        object-fit: cover; /* Ensures images maintain their aspect ratio */
       }
-      
-      #image-carousel li {
-        margin-right: 10px;
-      }
-      
-      #image-carousel img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-      }
-
   }

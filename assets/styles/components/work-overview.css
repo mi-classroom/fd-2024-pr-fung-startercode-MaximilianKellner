@@ -8,6 +8,7 @@
     gap: var(--size-s);
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
+    
     .work-item {
       display: flex;
       height: 100%;
