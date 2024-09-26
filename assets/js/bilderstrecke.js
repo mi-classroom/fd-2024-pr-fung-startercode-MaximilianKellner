@@ -16,4 +16,32 @@ function createImageItems(images, container) {
     `).join('');
 }
 
+function addImageClickEvent() {
+    const images = document.querySelectorAll('.image-item img');
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.close');
+
+    console.log(modal);
+
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            modal.style.display = 'block';
+            modalImg.src = img.src;
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        console.log('close');
+        modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', (e) => {
+        console.log('modal click');
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+}
+
 loadImagesFromJson();
