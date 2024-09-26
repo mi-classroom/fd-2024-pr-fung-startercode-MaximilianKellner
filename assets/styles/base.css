@@ -190,3 +190,23 @@ a:not(.wrap):hover {
     grid-template-columns: 400px 1fr;
   }
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  button {
+    width: fit-content;
+  }
+  
+  ::placeholder{
+    color: var(--color-light);
+  }
+
+}
+
+input{
+  height: 40px;
+  border-bottom: 2px solid var(--color-darkblue);
+}

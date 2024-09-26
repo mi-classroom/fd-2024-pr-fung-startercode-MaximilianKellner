@@ -37,11 +37,6 @@
       color: var(--color-darkblue);
     }
 
-    li {
-      color: var(--color-darkblue);
-
-    }
-
     &:hover{
       z-index: 1000;
       transform: rotate(2deg);

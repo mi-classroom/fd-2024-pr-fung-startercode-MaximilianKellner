@@ -3,6 +3,7 @@
 .keywords {
   li {
     display: inline;
+    color: var(--color-darkblue);
   }
 
   li + li::before {
