@@ -9,7 +9,7 @@
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
     
-    .work-item {
+    .work-item{
       display: flex;
       height: 100%;
       flex-direction: column;
@@ -20,7 +20,7 @@
       justify-items: center;
       transition: transform var(--tr-fast);
 
-      & > * {
+       & > * {
         padding-right: 2em;
         color: var(--color-darkest);
       }
@@ -36,6 +36,8 @@
             margin-right: var(--size-s);
         }
     }
+
+
 
       .keywords li {
         color: var(--color-pink);
@@ -61,5 +63,9 @@
         }
       }
 
+      &.is-hidden {
+        display: none;
+        background-color: red;
+    }
     }
   }

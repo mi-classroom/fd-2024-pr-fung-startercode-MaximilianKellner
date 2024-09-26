@@ -6,10 +6,9 @@ async function loadWorkItemsFromJson() {
     createWorkItems(works, workContainer);
 }
 
-
 function createWorkItems(works, container) {
-    container.innerHTML = works.map(work => `
-             <li class="work-item with-light-background">
+    container.innerHTML = works.map((work, index) => `
+             <li class="work-item with-light-background ${index > 4 ? 'is-hidden' : ''}">
                     <a class="wrap" href="${work.url}">
                         <div class="content">
                             <img src="${work.image || './assets/uploads/c.noss_a_lucas_cranach_exibition_with_paintings_which_are_prese_63eaa10b-fca7-461f-9ea0-ac4dac887979.jpg'}" alt="${work.title}">
@@ -24,5 +23,19 @@ function createWorkItems(works, container) {
                 </li>
     `).join('');
 }
+
+function toggleWorkItems() {
+    const workItems = document.querySelectorAll('.work-item');
+    workItems.forEach((work, index) => {
+        if (index > 3) {
+            work.classList.toggle('is-hidden');
+        }
+    });
+}
+
+const ausklappButton = document.querySelector('[data-js-ausklapp-button]');
+
+ausklappButton.addEventListener('click', toggleWorkItems);
+
 
 loadWorkItemsFromJson();
